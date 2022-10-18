@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1><strong><center>RANGKUMAN</center></strong></h1>
+    <h1>Rangkuman Kaidah Pencacahan</h1>
+        <p>1. Jika kegiatan 1, kegiatan 2, sampai kegiatan ke-k adalah kegiatan-kegiatan yang tidak saling lepas. 
+        Kemudian misalkan kegiatan 1 terjadi dengan n1 cara, kejadian 2 terjadi dengan n2 cara, dan kegiatan ke-k terjadi 
+        dengan nk cara. Maka banyaknya kegiatan tersebut akan terjadi sebanyak n1 x n2 x .... x nk</p>
+        <p>2. Jika kegiatan 1, kegiatan 2, sampai kegiatan ke-k merupakan kegiiatan-kegiatan yang saling lepas. Kemudian 
+        misalkan kegiatan 1 terjadi dengan n1 cara, kegiatan 2 terjadi n2 cara, dan kegiatan ke-k terjadi dengan nk cara. 
+        Maka banyaknya kegiatan tersebut akan terjadi sebanyak n1 + n2+ .... + nk</p>
+        <p>3. Untuk suatu n bilangan asli, n! (dibaca n faktorial) didefinisikan sebagai :
+        n! = n x (n-1) x .... x 2 x 1 atau n! = 1 x 2 x .... x (n-1) x n</p>
+        <p>4. Permutasi adalah suatu susunan yang berbeda yang dibentuk oleh sebagian atau keselurahan objek atau unsur 
+        yang diambil dari  sekelompok unsur yang tersedia. Susunan pada permutasi memperhatikan urutan.</p>
+        <p align="center">P(n, k) = n!/(n-k!)</p>
+        <p>5. Jika banyaknya permutasi n unsur yang mempunyai I1 unsur jenis pertama, I2 unsur jenis kedua, I3 unsur 
+        jenis ketiga, dan Ik unsur jenis ke-k yang sama, maka permutasi beberapa unsur yang sama adalah</p>
+        <p align="center">P(n, I1, I2, ...., Ik) = n!/(I1!I2!....Ik!)</p>
+        </p>
+        <p>6. Permutasi siklis merupakan banyaknya permutasi n unsur yang disusun secara melingkar</p>
+        <p align="center">Psiklis(n) = (n-1)!</p>
+        <p>7.  Kombinasi adalah suatu susunan dari sekelompok unsur tanpa memperhatikan susunannya</p>
+        <p align="center">C(n, k) = n!/(n-k)!k!</p>
+    <h1>Rangkuman Peluang Suatu Kejadian</h1>
+        <p>1. Percobaan adalah suatu kegiatan yang dapat diulang dengan keadaan yang sama untuk memperoleh hasil tertentu.
+        </p>
+        <p>2. Ruang sampel (S) adalah himpunan dari semua hasil percobaan.</p>
+        <p>3. Kejadian adalah himpunan bagian dari ruang sampel.</p>
+        <p>4. Titik sampel adalah anggota-anggota dalam ruang sampel.</p>
+        <p>5. Peluang kejadian A yang dinotasikan dengan P(A) adalah</p>
+        <p align="center">P(A) n(A)/n(S)</p>
+        <p>6. Nilai peluang suatu percobaan adalah antara 0 dan 1 atau 0 ≤ P(x) ≤ 1 dengan x adalah kejadian pada 
+        percobaan tersebut. Apabila P(x) = 0 kejadian x mustahil terjadi sedangkan apabila P(x) = 1 kejadian x pasti 
+        terjadi.</p>
+        <p>7. Jika A adalah suatu kejadian dan P(A) adalah peluang terjadinya A. Maka besarnya frekuensi harapan kejadian 
+        A dalam n kali percobaan dirumuskan dengan</p>
+    <h1>Rangkuman Kejadian Majemuk</h1>
+        <p>1. Peluang kejadian A dinotasikan dengan P(A) dan peluang komplemen kejadian bukan A dinotasikan dengan P
+        (bukan A) atau P(A'). P(A) +P(bukan A) = 1 atau P(bukan A) = 1-P(A)</p>
+         <p>2. Dua kejadian dikatakan saling lepas apabila dua kejadian tersebut tidak mungkin terjadi secara bersama-sama 
+        atau tidak mungkin dipertemukan.</p>
+         <p align="center">P(A ∪ B) = P(A) + P(B)</p>
+         <p>3. Kejadian A dan kejadian B dikatakan sebagai kejadian saling bebas jika kejadian A tidak dipengaruhi oleh 
+        kejadian B atau kejadian B tidak dipengaruhi oleh kejadian A. Dengan melihat hal tersebut, maka berlaku :</p>
+
+{% endblock %}

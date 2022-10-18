@@ -1,0 +1,492 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+	<h1><strong><center>MATERI</center></strong>MATERI</h1>
+	<h1><strong><center>Kaidah Pencacahan</center></strong></h1>
+	<p>Kaidah pencacahan adalah ilmu yang mempelajari suatu cara atau aturan untuk menentukan semua kemungkinan yang 
+    dapat terjadi dalam suatu percobaan tertentu (Djadir et al., 2017). Kaidah pencacahan dapat digunakan dengan beberap
+    cara yaitu :</p>
+	<center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0sZsVM5SzQI" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+	</center>
+	<h2>1.	Aturan Perkalian</h2>
+		<p>Pada aturan perkalian jika kegiatan 1, kegiatan 2, sampai kegiatan ke-k adalah kegiatan-kegiatan yang tidak 
+        saling lepas. Kemudian misalkan kegiatan 1 terjadi dengan n1 cara, kejadian 2 terjadi dengan n2 cara, dan 
+        kegiatan ke-k terjadi dengan nk cara. Maka banyaknya kegiatan tersebut akan terjadi sebanyak (Sari, 2020)</p>
+		<p align="center">n1 x n2 x .... x nk</p>
+		<p>
+			<strong>Contoh 1 :</strong>
+		</p>
+		<p>Rani memiliki 3 baju berwarna abu-abu (A), biru (B), dan ungu (U). Selain itu, Rani juga memiliki 2 celana 
+        berwarna hitam (H) dan putih (P). Ada berapa pasang baju dan celana yang dapat digunakan oleh Rani dengan 
+        pasangan yang berbeda?</p>
+		<p>
+			<strong>Penyelesaian :</strong>
+		</p>
+		<p>
+			<strong>Cara 1 :</strong>
+		</p>
+		<p>Banyaknya cara pemilihan baju adalah 3 cara, yaitu A, B, dan U.</p>
+		<p>Banyaknya cara pemilihan celana adalah 2 cara, yaitu H dan P.</p>
+		<p>Maka, banyaknya pasang baju dan celana adalah 3 x 2 = 6.</p>
+		<p>
+			<strong>Cara 2 :</strong>
+		</p>
+		<p>Soal di atas dapat diselesaikan dengan menggunakan tabel seperti di bawah ini :</p>
+		<center>
+			<img src="https://i.postimg.cc/MKq6tNwP/aturanperkalian-jpg.jpg" width ="300px" height="150px">
+		</center>
+		<p>Jadi, banyaknya pasang baju dan celana adalah 6.</p>
+		<p>
+			<strong>Contoh 2 :</strong>
+		</p>
+		<p>Dari angka-angka 1, 2, 3, 4, 5, dan 6, berapa banyak bilangan yang dapat disusun yang terdiri dari 4 angka?</
+		<p>a. Boleh berulang</p>
+		<p>b. Tidak boleh berulang</p>
+		<p>
+			<strong>Penyelesaian :</strong>
+		</p>
+		<p>a. Boleh berulang</p>
+		<p>Pada posisi ribuan, ratusan, puluhan, dan satuan terdiri dari 6 cara, yaitu 1, 2, 3, 4, 5, dan 6. Karena bole
+        berulang, sehingga semua angka memungkinkan untuk menempati posisi ribuan, ratusan, puluhan, dan satuan.</p>
+		<center>
+			<img src="https://i.postimg.cc/9QPyKvwD/bolehberulang.jpg" width ="300px" height="150px">
+		</center>
+		<p>Jadi, banyaknya bilangan yang dapat disusun adalah 6 x 6 x 6 x 6 = 1.296 bilangan.</p>
+		<p>b. Tidak boleh berulang</p>
+		<p>Karena tidak boleh berulang, maka :</p>
+		<p>Pada posisi ribuan terdiri dari 6 cara, yaitu 1, 2, 3, 4, 5, dan 6.</p>
+		<p>Pada posisi ratusan terdiri dari 6 - 1 = 5 cara. Karena 1 cara sudah menempati posisi ribuan.</p>
+		<p>Pada posisi puluhan terdiri dari 6 - 2 = 4 cara. Karena 2 cara sudah menempati posisi ribuan dan ratusan.</p>
+		<p>Pada posisi satuan terdiri dari 6 - 3 = 3 cara. Karena 3 cara sudah menempati posisi ribuan, ratusan, dan 
+        puluhan.</p>
+		<center>
+			<img src="https://i.postimg.cc/05JnZXnw/tidakbolehberulang.jpg" width ="300px" height="150px">
+		</center>
+		<p>Jadi, banyaknya bilangan yang dapat disusun adalah 6 x 5 x 4 x 3 = 360 bilangan</p>
+		<h2>2. Aturan Penjumlahan</h2>
+		<p>Pada aturan penjumlahan jika kegiatan 1, kegiatan 2, sampai kegiatan ke-k merupakan kegiiatan-kegiatan yang 
+        saling lepas. Kemudian misalkan kegiatan 1 terjadi dengan n1 cara, kegiatan 2 terjadi n2 cara, dan kegiatan ke-k
+        terjadi dengan nk cara. Maka banyaknya kegiatan tersebut akan terjadi sebanyak (Sari, 2020)</p>
+		<p align="center">n1 + n2 + .... + nk</p>
+		<p>
+			<strong>Contoh 1 :</strong>
+		</p>
+		<p>Sebuah perpustakaan memiliki 4 buah buku berbahasa Inggris, 3 buah buku berbahasa Jerman, dan 2 buah buku 
+        berbahasa Korea. Ada berapa jumlah cara memilih 1 buah buku sembarang bahasa?</p>
+		<p>
+			<strong>Penyelesaian :</strong>
+		</p>
+		<p>Jumlah cara memilih 1 buah buku sembarang bahasa adalah 4 + 3 + 2 = 9 cara.</p>
+		<p>
+			<strong>Contoh 2 :</strong>
+		</p>
+		<p>Dari kota A ke kota B terdapat beberapa jenis angkutan umum yang dapat digunakan. Angkutan tersebut terdiri 
+        dari 2 kapal laut, 3 travel, dan 1 pesawat yang dapat dipilih. Ada berapa jumlah cara berbeda untuk berangkat 
+        dari kota A ke kota B?</p>
+		<p>
+			<strong>Penyelesaian :</strong>
+		</p>
+		<p>Dalam soal di atas, ketika kita memilih kapal laut, travel, maupun pesawat tidak berpengaruh satu sama lain. 
+        Ketiganya tersebut merupakan himpunan yang saling lepas. Sehingga ada 2 + 3 + 1 = 6 cara berbeda untuk berangkat
+        dari kota A ke kota B.</p>
+	<h2>3. Faktorial</h2>
+		<p>Faktorial adalah hasil kali bilangan asli berurutan dari 1 sampai dengan n.</p>
+		<p>Untuk suatu n bilangan asli, n! (dibaca n faktorial) didefinisikan sebagai :</p>
+		<p align="center">n! = n x (n-1) x .... x 2 x 1 atau n! = 1 x 2 x .... x (n-1) x n</p>
+		<p>(As’ari et al., 2018)</p>
+		<p>
+			<strong>Contoh 1 :</strong>
+		</p>
+		<p>Hitunglah nilai dari 5!</p>
+		<p>
+			<strong>Penyelesaian :</strong>
+		</p>
+		<p align="center">5! = 5 x 4 x 3 x 2 x 1 = 120</p>
+		<p>
+			<strong>Contoh 2 :</strong>
+		</p>
+		<p>Hitunglah nilai dari  6!/3!</p>
+		<p>
+			<strong>Penyelesaian :</strong>
+		</p>
+		<p align="center">6! 3! = (6 x 5 x 4 x 3 x 2 x 1)/(3 x 2 x 1) = 6 x 5 x 4 = 120</p>
+		<h2>4. Permutasi</h2>
+		<p>Permutasi adalah suatu susunan yang berbeda yang dibentuk oleh sebagian atau keselurahan objek atau unsur yan
+        diambil dari  sekelompok unsur yang tersedia. Susunan pada permutasi memperhatikan urutan, artinya AB dan BA 
+        dihitung berbeda.</p>
+		<p>Banyak permutasi dari k unsur yang diambil dari n unsur adalah</p>
+		<p align="center">P(n, k) = n!/(n-k)!</p>
+		<p>(Prijono, 2012)</p>
+		<p>
+			<strong>Contoh 1 :</strong>
+		</p>
+		<p>Dalam suatu kelas akan diadakan pemilihan ketua kelas, sekretaris, dan bendahara. Dan ada 6 siswa yang 
+        mendaftarkan diri. Berapa banyaknya cara untuk memilih ketua kelas, sekretaris, dan bendahara?</p>
+		<p>
+			<strong>Penyelesaian :</strong>
+		</p>
+		<p>Banyak siswa yang mendaftarkan diri 6 orang, maka n = 6</p>
+		<p>Akan dipilih 3 orang, yaitu ketua kelas, sekretaris, dan bendahara,  maka k = 3</p>
+		<p align="center">P(n, k) = n!/(n-k)!</p>
+		<p align="center">P(6, 3) = 6!/(6-3)!</p>
+		<p align="center">P(6, 3) = 6!/3!</p>
+		<p align="center">P(6, 3) = ( 6 x 5 x 4 x 3 x 2 x 1)/(3 x 2 x 1)</p>
+		<p align="center">P(6, 3) = 6 x 5 x 4</p>
+		<p align="center">P(6, 3) = 120</p>
+		<p>Jadi, banyaknya cara untuk memilih ketua kelas, sekretaris, dan bendahara adalah 120 cara.</p>
+		<p>
+			<strong>Contoh 2 :</strong>
+		</p>
+		<p>Jika dalam sebuah ruangan terdiri dari 8 orang dan dalam ruangan tersebut disediakan 4 kursi. Berapa banyakny
+        permutasi dari cara duduk tersebut apabila terdapat salah seorang dari 8 orang tersebut yang selalu duduk di 
+        kursi tertentu?</p>
+		<p>
+			<strong>Penyelesaian :</strong>
+		</p>
+		<p>Dari soal di atas dikatakan bahwa ada salah seorang dari 8 orang tersebut yang selalu duduk di kursi tertentu
+        sehingga hanya tersisa 7 orang dan 3 kursi kosong.</p>
+		<p>Dengan demikian banyaknya cara duduk, yaitu :</p>
+		<p align="center">P(n, k) = n!/(n-k)!</p>
+		<p align="center">P(7, 3) = 7!/(7-3)!</p>
+		<p align="center">P(7, 3) = 7!/4!</p>
+		<p align="center">P(7, 3) = ( 7 x 6 x 5 x 4!)/4!</p>
+		<p align="center">P(7, 3) = 7 x 6 x 5</p>
+		<p align="center">P(7, 3) = 210</p>
+		<p>Jadi, banyaknya permutasi dari cara duduk tersebut apabila terdapat salah seorang dari 8 orang tersebut yang 
+        selalu duduk di kursi tertentu adalah 210 cara.</p>
+	<h3>● Permutasi Beberapa Unsur yang Sama</h3>
+		<p>Banyaknya permutasi n unsur yang mempunyai I1 unsur jenis pertama, I2 unsur jenis kedua, I3 unsur jenis 
+        ketiga, dan Ik unsur jenis ke-k yang sama adalah</p>
+		<p align="center">P(n, I1, I2, ...., Ik) = n!/(I1!I2!....Ik!)</p>
+		<p>
+			<strong>Contoh 1 :</strong>
+		</p>
+		<p>Berapakah banyaknya susunan berbeda yang dapat dibuat dari huruf-huruf “PENDIDIK”?</p>
+		<p>
+			<strong>Penyelesaian :</strong>
+		</p>
+		<p>Diketahui jumlah huruf = n =  8</p>
+		<p>Huruf yang sama D = I1 = 2, I = I2 = 2</p>
+		<p>Maka,</p>
+		<p align="center">P(n, I1, I2, ...., Ik) = n!/(I1!I2!....Ik!)</p>
+		<p align="center">P(8, 2, 2) = 8!/(2! x 2!)</p>
+		<p align="center">P(8, 2, 2) = (8 x 7 x 6 x 5 x 4 x 3 x 2 x 1)/(2 x 1 x 2 x 1)</p>
+		<p align="center">P(8, 2, 2) = 8 x 7 x 6 x 5 x 3 x 2 x 1</p>
+		<p align="center">P(8, 2, 2) = 10.080</p>
+		<p>Jadi, banyaknya susunan berbeda yang dapat dibuat dari huruf-huruf “PENDIDIK” adalah 10.080 susunan.</p>
+		<p>
+			<strong>Contoh 2</strong>
+		</p>
+		<p>Berapakah banyaknya susunan berbeda yang dapat dibuat dari huruf-huruf “MINUMAN”?</p>
+		<p>
+			<strong>Penyelesaian :</strong>
+		</p>
+		<p>Diketahui jumlah huruf = n = 7</p>
+		<p>Huruf yang sama M = I1 = 2, N = I2 = 2</p>
+		<p>Maka,</p>
+		<p align="center">P(n, I1, I2, ...., Ik) = n!/(I1!I2!....Ik!)</p>
+		<p align="center">P(7, 2, 2) = 7!/(2! x 2!)</p>
+		<p align="center">P(7, 2, 2) = (7 x 6 x 5 x 4 x 3 x 2 x 1)/(2 x 1 x 2 x 1)</p>
+		<p align="center">P(7, 2, 2) = 7 x 6 x 5 x 3 x 2 x 1</p>
+		<p align="center">P(7, 2, 2) = 1.260</p>
+		<p>Jadi, banyaknya susunan berbeda yang dapat dibuat dari huruf-huruf  “MINUMAN” adalah 1.260 susunan.</p>
+	<h3>● Permutasi Siklis</h3>
+		<p>Permutasi siklis merupakan banyaknya permutasi n unsur yang disusun secara melingkar</p>
+		<p align="center">Psiklis(n) = (n-1)!</p>
+		<p>
+			<strong>Contoh 1 :</strong>
+		</p>
+		<p>Jika 4 orang duduk mengelilingi meja bundar, berapa banyak cara susunan melingkar 4 orang tersebut?</p>
+		<p>
+			<strong>Penyelesaian :</strong>
+		</p>
+		<p align="center">Psiklis(n) = (n-1)!</p>
+		<p align="center">Psiklis(4) = (4-1)!</p>
+		<p align="center">Psiklis(4) = 3!</p>
+		<p align="center">Psiklis(4) = 3 x 2 x 1</p>
+		<p align="center">Psiklis(4) = 6</p>
+		<p>Jadi, banyaknya cara susunan melingkar 4 orang tersebut adalah 6 cara.</p>
+		<p>
+			<strong>Contoh 2 :</strong>
+		</p>
+		<p>Jika terdapat 10 pohon berbeda yang akan ditanam secara melingkar. Berapa banyak cara berbeda untuk penanaman
+        pohon tersebut?</p>
+		<p>
+			<strong>Penyelesaian :</strong>
+		</p>
+		<p align="center">Psiklis(n) = (n-1)!</p>
+		<p align="center">Psiklis(10) = (10-1)!</p>
+		<p align="center">Psiklis(10) = 9!</p>
+		<p align="center">Psiklis(10) = 9 x 8 x 7 x 6 x 5 x 4 x 3 x 2 x 1</p>
+		<p align="center">Psiklis(10) = 362.880</p>
+		<p>Jadi, banyak cara berbeda untuk penanaman pohon tersebut adalah 362.880 cara.</p>
+	<h2>5. Kombinasi</h2>
+		<p>Kombinasi adalah suatu susunan dari sekelompok unsur tanpa memperhatikan susunannya, artinya AB = BA.</p>
+		<p>Banyaknya kombinasi dari k unsur yang diambil dari n unsur adalah</p>
+		<p align="center">C(n, k) = n!/(n-k)!k!</p>
+		<p>(Prijono, 2012)</p>
+		<p>
+			<strong>Contoh 1 :</strong>
+		</p>
+		<p>Jika dalam suatu kelas terdiri dari 10 orang, berapa banyak cara susunan kelompok yang terdiri dari 4 orang 
+        yang dapat dibentuk?</p>
+		<p>
+			<strong>Penyelesaian :</strong>
+		</p>
+		<p align="center">C(n, k) = n!/(n-k)!k!</p>
+		<p align="center">C(10, 4) = 10!/(10-4)!4!</p>
+		<p align="center">C(10, 4) = 10!/(6!4!)</p>
+		<p align="center">C(10, 4) = (10 x 9 x 8 x 7 x 6!)/(6! x 4 x 3 x 2 x 1)</p>
+		<p align="center">C(10, 4) = 10 x 3 x 7</p>
+		<p align="center">C(10, 4) = 210</p>
+		<p>Jadi, banyaknya cara susunan yang dapat dibentuk adalah 210 cara.</p>
+		<p>
+			<strong>Contoh 2 :</strong>
+		</p>
+		<p>Suatu sekolah sedang membuka pendaftaran untuk menjadi pengurus OSIS. Terdapar 10 siswa yang mendaftar dan 
+        akan dipilih 4 siswa untuk menjadi pengurus OSIS. Berapa banyak cara susunan terpilih?</p>
+		<p>
+			<strong>Penyelesaian :</strong>
+		</p>
+		<p>Pada soal di atas, dapat diselesaikan dengan menggunakan kombinasi. Karena pada soal di atas tidak ada posisi
+        yang akan diduduki oleh siswa.</p>
+		<p>Maka,</p>
+		<p align="center">C(n, k) = n!/(n-k)!k!</p>
+		<p align="center">C(10, 4) = 10!/(10-4)!4!</p>
+		<p align="center">C(10, 4) = 10!/(6!4!)</p>
+		<p align="center">C(10, 4) = (10 x 9 x 8 x 7 x 6!)/(6! x 4 x 3 x 2 x 1)</p>
+		<p align="center">C(10, 4) = 10 x 3 x 7</p>
+		<p align="center">C(10, 4) = 210</p>
+		<p>Jadi, banyak cara susunan terpilih adalah 210 cara.</p>
+        <h2>Applet GeoGebra</h2>
+	    <p>Berikut ini Applet GeoGebra terkait submateri Permutasi :</p>
+	    <center>
+		<iframe src="https://www.geogebra.org/classic/dpfystea?embed" width="800" height="600" allowfullscreen 
+        style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+	    </center>
+        <h1><strong><center>Peluang Suatu Kejadian</center></strong></h1>
+        <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GUV4D1hJKrA" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        </center>
+        <h2>1. Pengertian Percobaan, Ruang Sampel, dan Kejadian</h2>
+            <p>● Percobaan adalah suatu kegiatan yang dapat diulang dengan keadaan yang sama untuk memperoleh hasil tertentu</p>
+            <p>● Ruang sampel (S) adalah himpunan dari semua hasil percobaan.</p>
+            <p>● Kejadian adalah himpunan bagian dari ruang sampel.</p>
+            <p>● Titik sampel adalah anggota-anggota dalam ruang sampel. (Yuliatmoko & S, 2008)</p>
+            <p>
+                <strong>Contoh :</strong>
+            </p>
+            <p>Pada suatu percobaan melempar sebuah dadu, tentukan ruang sampel dan kejadian muncul bilangan genap dalam 
+            sebuah himpunan. </p>
+            <p>
+                <strong>Penyelesaian :</strong>
+            </p>
+            <p>Sebuah dadu memiliki enam sisi yang masing-masing bernomor 1, 2, 3, 4, 5, dan 6. Sehingga,</p>
+            <p>Ruang sampel S : {1, 2, 3, 4, 5, 6}</p>
+            <p>Kejadian muncul bilangan genap : {2, 4, 6}</p>
+        <h2>2. Pengertian Peluang Suatu Kejadian</h2>
+            <p>Jika S adalah ruang sampel dengan banyak elemen n(S) dan A adalah suatu kejadian dengan banyak elemen = n(A). 
+             Maka peluang kejadian A yang dinotasikan dengan P(A)</p>
+            <p align="center">P(A) = n(A)/n(S)</p>
+            <p>(Yuniarti, 2020)</p>
+            <p>
+                <strong>Contoh 1 :</strong>
+            </p>
+            <p>Dua buah uang logam dilemparkan secara bersamaan dalam satu kali lemparan, tentukan peluang kejadian munculnya 
+             kedua gambar.</p>
+            <p>
+                <strong>Penyelesaian :</strong>
+            </p>
+            <p>Sebuah uang logam memiliki dua sisi, yaitu angka dan gambar.</p>
+            <center>
+                <img src="https://i.postimg.cc/B6D5p1Mz/uangkoin.jpg" width ="300px" height="150px">
+            </center>
+            <p>Berikut ini tabel kemunculan jika dua buah uang logam dilempar secara bersamaan.</p>
+            <center>
+                <img src="https://i.postimg.cc/7YpH8GV9/peluangsuatukejadian.jpg" width ="300px" height="150px">
+            </center>
+            <p>Berdasarkan tabel di atas, didapatkan n(S) = 4 dan n(A) = 1</p>
+            <p>Maka, peluang kejadian muncul kedua gambar adalah</p>
+            <p align="center">P(A) = n(A)/n(S)</p>
+            <p align="center">P(A) = 1/4</p>
+            <p>
+                <strong>Contoh 2 :</strong>
+            </p>
+            <p>Sebuah dadu dilempar sebanyak satu kali. Berapa peluang munculnya bilangan prima pada dadu?</p>
+            <p>
+                <strong>Penyelesaian :</strong>
+            </p>
+            <p>Ruang sampel pada mata dadu adalah 6, jadi n(S) = 6</p>
+            <p>Banyak bilangan prima adalah 3 yaitu 2, 3, dan 5, jadi n(A) = 3.</p>
+            <p>Maka, peluang munculnya bilangan prima adalah</p>
+            <p align="center">P(A) = n(A)/n(S)</p>
+            <p align="center">P(A) = 3/6</p>
+            <p align="center">P(A) = 1/2</p>
+            <p>Jadi, peluang munculnya bilangan prima pada dadu adalah  1/2.</p>
+        <h2>3. Kisaran Nilai Peluang</h2>
+            <p>Nilai peluang suatu percobaan adalah antara 0 dan 1 atau 0 ≤ P(x) ≤ 1 dengan x adalah kejadian pada percobaan 
+             tersebut.</p>
+            <p>● Apabila P(x) = 0, kejadian x mustahil terjadi.</p>
+            <p>● Apabila P(x) = 1, kejadian x pasti terjadi. (Djumanta & Sudrajat, 2008)</p>
+        <h2>4. Frekuensi Harapan</h2>
+            <p>Jika A adalah suatu kejadian dan P(A) adalah peluang terjadinya A. Maka besarnya frekuensi harapan kejadian A 
+            dalam n kali percobaan dirumuskan dengan</p>
+            <p align="center">Fhar(A) = n x P(A)</p>
+            <p>(Yuniarti, 2020)</p>
+            <p>
+                <strong>Contoh :</strong>
+            </p>
+            <p>Sebuah dadu dilemparkan sebanyak 30 kali. Berapa frekuensi harapan muncul angka ganjil?</p>
+            <p>
+                <strong>Penyelesaian :</strong>
+            </p>
+            <p>Sebuah dadu memiliki enam sisi dengan masing-masing memiliki angka 1, 2, 3, 4, 5, dan 6.</p>
+            <p>Peluang munculnya angka ganjil adalah P(angka ganjil) = 3/6 = 1/2</p>
+            <p>Maka, frekuensi harapan muncul angka ganjil dalam 30 kali percobaan adalah</p>
+            <p align="center">Fhar(angka ganjil) = 1/2 x 30 = 15</p>
+            <p align="center">Fhar(angka ganjil) = 15</p>
+            <h2>Applet GeoGebra</h2>
+            <p>Berikut ini Applet GeoGebra terkait submateri Peluang Suatu Kejadian :</p>
+            <center>
+            <iframe src="https://www.geogebra.org/classic/q78qtbf7?embed" width="800" height="600" allowfullscreen
+            style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+            </center>
+            <h1><strong><center>Kejadian Majemuk</center></strong></h1>
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BChA08e53q0" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            </center>
+            <h2>1. Peluang Komplemen Suatu Kejadian</h2>
+                <p>Pada peluang komplemen suatu kejadian, jika kejadian pada sebuah ruang sampel adalah A dan A’ yang disebut 
+            juga komplemen kejadian A adalah  kejadian bukan A yang juga terdapat pada ruang sampel tersebut.</p>
+                <p>Peluang kejadian A dinotasikan dengan P(A) dan peluang komplemen kejadian bukan A dinotasikan dengan P(bukan 
+            A) atau P(A').</p>
+            <center>
+                <img src="https://i.postimg.cc/wjn9JfL8/Komplemen-A.png"width ="300px" height="150px">
+            </center>
+                <p>P(A) + P(bukan A) = 1 atau P(bukan A) = 1-P(A)</p>
+                <p>(Djumanta & Sudrajat, 2008)</p>
+                <p>
+                    <strong>Contoh 1 :</strong>
+                </p>
+                <p>Pada percobaan melempar dadu sekali, jika A adalah kejadian munculnya bilangan genap. Tentukan peluang 
+            kejadian bukan A.</p>
+                <p>
+                    <strong>Penyelesaian :</strong>
+                </p>
+                <p>Pada percobaan melempar dadu sekali, ruang sampelnya S = {1, 2, 3, 4, 5, 6}, sehingga n(S) = 6.</p>
+                <p>A = kejadian munculnya bilangan genap, sehingga A = {2, 4, 6} dan n(A) = 3</p>
+                <p align="center">P(A) = n(A)/n(S)</p>
+                <p align="center">P(A) = 3/6</p>
+                <p align="center">P(A) = 1/2</p>
+                <p align="center">P(A') = 1 - P(A)</p>
+                <p align="center">P(A') = 1- 1/2</p>
+                <p align="center">P(A') = 1/2</p>
+                <p>Jadi, peluang kejadian bukan A adalah 1/2.</p>
+                <p>
+                    <strong>Contoh 2 :</strong>
+                </p>
+                <p>Pada percobaan melempar dadu sekali, jika A adalah kejadian munculnya bilangan kurang dari 2. Tentukan peluang
+            kejadian bukan A.</p>
+                <p>
+                    <strong>Penyelesaian :</strong>
+                </p>
+                <p>Pada percobaan melempar dadu sekali, ruang sampelnya S = {1, 2, 3, 4, 5, 6}, sehingga n(S) = 6.</p>
+                <p>A = kejadian munculnya bilangan kurang dari 2, sehingga A = {1} dan n(A) = 1</p>
+                <p align="center">P(A) = n(A)/n(S)</p>
+                <p align="center">P(A) = 1/6</p>
+                <p align="center">P(A') = 1 - P(A)</p>
+                <p align="center">P(A') = 1- 1/6</p>
+                <p align="center">P(A') = 5/6</p>
+                <p>Jadi, peluang kejadian bukan A adalah 5/6.</p>
+            <h2>2. Peluang Gabungan Dua Kejadian Saling Lepas</h2>
+                <p>Dua kejadian dikatakan saling lepas apabila dua kejadian tersebut tidak mungkin terjadi secara bersama-sama 
+            atau tidak mungkin dipertemukan. Dengan kata lain kejadian yang satu menganggap tidak ada kejadian yang lain.</p>
+                <p>Misalnya himpunan A melambangkan kejadian A dan himpunan B melambangkan kejadian B. Apabila P(A) dan P(B) 
+            setiap peluang kejadian A dan kejadian B yang saling lepas, peluang gabungan 2 kejadian tersebut dinyatakan 
+            dengan P(A ∪ B) yaitu P(A) +P(B) - P(A ∩ B). Oleh karena n (A ∩ B) = 0 maka tentunya P(A ∩ B) = 0. Sehingga</p>
+                <p align="center">P(A ∪ B) = P(A) + P(B)</p>
+                <p>(Djumanta & Sudrajat, 2008)</p>
+                <p>
+                    <strong>Contoh 1 :</strong>
+                </p>
+                <p>Dalam sebuah keranjang terdapat 3 bola warna biru , 3 bola warna hijau, dan 2 bola warna merah. Berapa peluang
+            mendapatkan bola biru atau bola merah?</p>
+                <p>
+                    <strong>Penyelesaian :</strong>
+                </p>
+                <p align="center">P(Biru ∪ Merah) = P(Biru) + P(Merah)</p>
+                <p align="center">P(Biru ∪ Merah) = 3/8 + 2/8</p>
+                <p align="center">P(Biru ∪ Merah) = 5/8</p>
+                <p>
+                    <strong>Contoh 2 :</strong>
+                </p>
+                <p>Dalam sebuah plastik terdapat 3 buah apel , 2 buah pir, dan 2 buah mangga. Berapa peluang mendapatkan buah 
+            apel atau buah mangga?</p>
+                <p>
+                    <strong>Penyelesaian :</strong>
+                </p>
+                <p align="center">P(Apel ∪ Mangga) = P(Apel) + P(Mangga)</p>
+                <p align="center">P(Apel ∪ Mangga) = 3/7 + 2/7</p>
+                <p align="center">P(Apel ∪ Mangga) = 5/7</p>
+            <h2>3. Peluang Dua Kejadian Saling Bebas</h2>
+                <p>Kejadian A dan kejadian B dikatakan sebagai kejadian saling bebas jika kejadian A tidak dipengaruhi oleh 
+            kejadian B atau kejadian B tidak dipengaruhi oleh kejadian A. Dengan melihat hal tersebut, maka berlaku :</p>
+                <p align="center">P(A ∩ B) = P(A) x P(B)</p>
+                <p>(Djumanta & Sudrajat, 2008)</p>
+                <p>
+                    <strong>Contoh 1 :</strong>
+                </p>
+                <p>Dua dadu dilempar secara bersama-sama. Berapa peluang munculnya mata dadu pertama 2 dan mata dadu kedua 3?</p>
+                <p>
+                    <strong>Penyelesaian :</strong>
+                </p>
+                <p>Kejadian ini merupakan kejadian saling bebas, karena dadu pertama dan dadu kedua tidak saling berkaitan.</p>
+                <p>Misal :</p>
+                <p>A adalah kejadian munculnya mata dadu 2</p>
+                <p>B adalah kejadian munculnya mata dadu 3</p>
+                <p>Pada soal ini diketahui :</p>
+                <p>n(AA) = 1 (mata dadu angka 2 hanya ada 1)</p>
+                <p>n(AB) = 1 (mata dadu angka 3 hanya ada 1)</p>
+                <p>n(SA) = n(SB) = 6 (mata dadu terdiri dari 6, yaitu 1, 2, 3, 4, 5, dan 6)</p>
+                <p>Sehingga, didapatkan</p>
+                <p align="center">P(A ∩ B) = P(A) x P(B)</p>
+                <p align="center">P(A ∩ B) = n(AA)/n(SA) x n(AB)/n(SB)</p>
+                <p align="center">P(A ∩ B) = 1/6 x 1/6</p>
+                <p align="center">P(A ∩ B) = 1/36</p>
+                <p>Jadi, peluang munculnya mata dadu pertama 2 dan mata dadu kedua 3 adalah  1/36.</p>
+                <p>
+                    <strong>Contoh 2 :</strong>
+                </p>
+                <p>Dalam kotak pertama terdapat 4 bola merah dan 2 bola biru. Kotak kedua terdapat 6 bola merah dan 2 bola hijau.
+                 Dari masing-masing kotak akan diambil 1 bola. Berapa peluang terambilnya bola merah dari kotak pertama dan bola 
+                 hijau dari kotak kedua?</p>
+                <p>
+                    <strong>Penyelesaian :</strong>
+                </p>
+                <p>Misalkan kotak pertama adalah A dan kotak kedua adalah B</p>
+                <p>Maka,</p>
+                <p>n(SA) = 6</p>
+                <p>n(AA) = 4</p>
+                <p>n(SB) = 8</p>
+                <p>n(AB) = 2</p>
+                <P>Jadi, peluang terambilnya bola merah dari kotak pertama dan nola hijau dari kotak kedua adalah</P>
+                <p align="center">P(A ∩ B) = P(A) x P(B)</p>
+                <p align="center">P(A ∩ B) = n(AA)/n(SA) x n(AB)/n(SB)</p>
+                <p align="center">P(A ∩ B) = 4/6 x 2/8</p>
+                <p align="center">P(A ∩ B) = 8/48</p>
+                <p align="center">P(A ∩ B) = 1/6</p>
+                <h2>Applet GeoGebra</h2>
+                <p>Berikut ini Applet GeoGebra terkait submateri Peluang Komplemen Suatu Kejadian :</p>
+                <center>
+                <iframe src="https://www.geogebra.org/classic/gwtuuvxb?embed" width="800" height="600" allowfullscreen 
+                style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+                </center>
+{% endblock %}
